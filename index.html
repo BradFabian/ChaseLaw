@@ -4,86 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chase Law</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
-      crossorigin="anonymous"
-    />
+    
   </head>
   <body>
-    <header class="bg-light p-3">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/"
-            ><img src="..." class="img-fluid" alt="chase law logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Practice Areas
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Real Estate Transactions</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Real Estate Litigation</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <header class="header">
+      <div class="header__logo"><span>Chase Law</span></div>
+      
+      <nav class='header__nav'>
+        <ul class='nav__list'>
+          <li class='nav__item'><a>Home</a></li>
+          <li class='nav__item'><a>About</a></li>
+          <li class='nav__item'><a>Attorney</a></li>
+          <li class='nav__item'><a>Contact</a></li>
+        </ul>
       </nav>
+
     </header>
-    <main class="container">
-      <section></section>
+    <main>
+      <!--Introdution-->
+     <section class="intro" id='home'>
+      <h1 class="section__title">We are Miami's top real estate attorney</h1>
+       <div class="intro__content">
+       
+         <h2>What will a <span><strong>Chase Law </strong></span> client expect? </h2> 
+         <ul class="content__list">
+           <li class="content__item"><span class="content__check"><i class="fas fa-check"></i></span> Individualized one-on-one service</li>
+           <li class="content__item"><span class="content__check"><i class="fas fa-check"></i></span> Professional legal advice at competitive rates</li>
+           <li class="content__item"><span class="content__check"><i class="fas fa-check"></i></span> An easily accessible attorney willing to answer questions throughout the representation</li>
+           <li class="content__item"><span class="content__check"><i class="fas fa-check"></i></span>Dedicated and hard-working staff with knowledge of the real estate industry</li>
+           <li class="content__item"><span class="content__check"><i class="fas fa-check"></i></span>Aggressive representation at every stage of litigation</li>
+           <li class="content__item"><span class="content__check"><i class="fas fa-check"></i></span>Meticulous review of title issues in connection with your purchase, sale, refinance or short sale</li>
+         </ul>
+         </div>
+         <div class="intro_contact">
+         <p>Contact us today for a <span><strong>free</strong></span> consultation.</p>
+       <a href='#contact' class='btn'>contact us</a>
+       </div>
+
+     </section>
+
+     <section class="about" id='about'>
+
+    </section>
+
+    <section class="attorney" id='attorney'>
+
+    </section>
+
+    <section class="contact" id='contact'>
+
+    </section>
+
+
     </main>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-      crossorigin="anonymous"
-    ></script>
+    <footer class='footer'>
+      <p class='footer__text'> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Chase Law LLC </p>
+      </footer>
+    
     <script src="./public/js/app.js"></script>
   </body>
 </html>

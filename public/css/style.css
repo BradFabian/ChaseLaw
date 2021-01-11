@@ -1,3 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.section__title {
+  margin: 0.4em;
+}
+
+strong {
+  font-weight: 400;
+  color: #ffd369;
+  background-color: #393e46;
+  padding: 0.1em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.nav__list {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__list li {
+  padding: 1em;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.605), rgba(0, 0, 0, 0.605)), url("/public/images/downtownmiami.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #eeeeee;
+}
+
+.content__list {
+  text-decoration: none;
+  list-style: none;
+  margin: 1em;
+}
+
+.content__check {
+  padding: 0.5em;
+}
+
+.fa-check {
+  color: #ffd369;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  background: #ffd369;
+  color: #222831;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  transition: transform 200ms ease-in-out;
+  border-radius: 0.3rem;
+  margin: 0.6em;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.footer__text {
+  text-transform: capitalize;
+}
 
 /*# sourceMappingURL=style.css.map */
