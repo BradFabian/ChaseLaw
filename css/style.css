@@ -95,7 +95,7 @@ strong {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.605), rgba(0, 0, 0, 0.605)), url("/images/downtownmiami.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.605), rgba(0, 0, 0, 0.605)), url("../images/downtownmiami.jpg");
   background-size: cover;
   background-position: center;
   color: #eeeeee;
@@ -153,7 +153,7 @@ strong {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.605), rgba(0, 0, 0, 0.605)), url("/images/office.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.605), rgba(0, 0, 0, 0.605)), url("../images/office.jpg");
   background-size: cover;
   background-position: center;
   color: #eeeeee;
@@ -220,7 +220,7 @@ strong {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.605), rgba(0, 0, 0, 0.605)), url("/images/miamisora.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.605), rgba(0, 0, 0, 0.605)), url("../images/miamisora.jpg");
   background-size: cover;
   background-position: center;
   color: #eeeeee;
