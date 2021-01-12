@@ -92,6 +92,11 @@ strong {
 .header__nav {
   display: flex;
 }
+
+.header__link {
+  text-decoration: none;
+  color: inherit;
+}
 // Nav Bar //
 .nav__list,
 .contact__list {
