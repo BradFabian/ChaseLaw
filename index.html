@@ -17,10 +17,10 @@
       
       <nav class='header__nav'>
         <ul class='nav__list'>
-          <li class='nav__item'><a>Home</a></li>
-          <li class='nav__item'><a>About</a></li>
-          <li class='nav__item'><a>Attorney</a></li>
-          <li class='nav__item'><a>Contact</a></li>
+          <li class='nav__item'><a href='#home' class='nav__link'>Home</a></li>
+          <li class='nav__item'><a href='#about' class='nav__link'>About</a></li>
+          <li class='nav__item'><a href='#attorney' class='nav__link'>Attorney</a></li>
+          <li class='nav__item'><a href='#contact' class='nav__link'>Contact</a></li>
         </ul>
       </nav>
 
@@ -28,20 +28,20 @@
     <main>
       <!--Introdution-->
      <section class="intro" id='home'>
-      <h1 class="section__title">We are Miami's top real estate attorney</h1>
+      <h1 class="section__title">A real estate attorney in Miami that you can trust</h1>
        <div class="intro__content">
        
-         <h2>What will a <span><strong>Chase Law </strong></span> client expect? </h2> 
+         <h2>What will a <span><strong>Chase Law P.A.</strong></span> client expect? </h2> 
          <ul class="content__list">
-           <li class="content__item"><span class="content__check"><i class="fas fa-check"></i></span> Individualized one-on-one service</li>
-           <li class="content__item"><span class="content__check"><i class="fas fa-check"></i></span> Professional legal advice at competitive rates</li>
-           <li class="content__item"><span class="content__check"><i class="fas fa-check"></i></span> An easily accessible attorney willing to answer questions throughout the representation</li>
+           <li class="content__item"><span class="content__check"><i class="fas fa-check"></i></span>Individualized one-on-one service</li>
+           <li class="content__item"><span class="content__check"><i class="fas fa-check"></i></span>Professional legal advice at competitive rates</li>
+           <li class="content__item"><span class="content__check"><i class="fas fa-check"></i></span>An easily accessible attorney willing to answer questions throughout the representation</li>
            <li class="content__item"><span class="content__check"><i class="fas fa-check"></i></span>Dedicated and hard-working staff with knowledge of the real estate industry</li>
            <li class="content__item"><span class="content__check"><i class="fas fa-check"></i></span>Aggressive representation at every stage of litigation</li>
            <li class="content__item"><span class="content__check"><i class="fas fa-check"></i></span>Meticulous review of title issues in connection with your purchase, sale, refinance or short sale</li>
          </ul>
          </div>
-         <div class="intro_contact">
+         <div class="intro__contact">
          <p>Contact us today for a <span><strong>free</strong></span> consultation.</p>
        <a href='#contact' class='btn'>contact us</a>
        </div>
@@ -49,21 +49,79 @@
      </section>
 
      <section class="about" id='about'>
-
+      <h1 class="section__title">We are a boutique law firm </h1>
+      
+      <div class="about__content">
+        <h2>Specializing in real estate transactions and title work.</h2>
+        <p>
+          In Florida real estate deals, parties rely on title insurance to ensure that they are purchasing or conveying marketable title to the property.  Careful examination of title and lien searches is vital to a successful transaction.  At Chase Law, we are dedicated to a thorough review of all title matters in a transaction.  Buying or selling a home is an important decision. We are here for our clients at every stage of the transaction.
+        </p>
+        <p>  
+          We provide full title services as well as the comfort of having a lawyer handle your file from beginning to end.  No transaction is too big or too small.  Our costs are comparable to title companies but our representation of clients is superior.  The Chase Law team is in constant communication with realtors, lenders, mortgage brokers, condominium associations and other entities integral to the transaction.  We work together with all parties to ensure a smooth and timely closing.
+        </p>
+      </div>
     </section>
 
     <section class="attorney" id='attorney'>
+      <h1 class="section__title">Meet The Attorney</h1>
+
+      
+      <h2>Jenna Chase Fabian Esq.</h2>
+      <div class='attorney__bio'>
+        
+        <img src="/public/images/jchase.jpg" alt="image of attorney"class="attorney__img" >
+        <div class="attorney__content">
+          <p>Jenna is a dynamic, client-centered attorney who is dedicated to the efficient resolution of cases in a number of different legal contexts.  She aggressively represents individuals and businesses.  As the founder of Chase Law, Jenna believes that the client comes first.  Her calm demeanor and attention to detail makes her an excellent advocate.  Jenna's practice focuses on real estate transactional work but she also has experience in complex civil litigation such as class actions, professional liability cases, toxic tort litigation and appellate work.  Before founding Chase Law, Jenna worked at a mid-sized insurance defense firm in downtown Miami.</p>
+          <p>Jenna earned her J.D., cum laude, from the University of Miami and her B.A., cum laude, from Tulane University.  Jenna began her legal career as an intern in the District Attorney's office in Boston, Massachusetts.  In law school, Jenna served as the Executive Editor of the Psychology, Public Policy & Law Journal. </p>
+          <p>Jenna is a member of the Florida Bar, the American Bar Association, the Dade County Bar Association and the Real Property, Probate and Trust Law Section of the Florida Bar.  She is an agent of Attorney’s Title Insurance Fund.  Jenna is also an avid runner along the shores of Miami Beach.</p>
+        </div>
+
+      </div>
+      
+      
+      
 
     </section>
 
     <section class="contact" id='contact'>
+      <h2>Contact Us</h2>
+      <div class="contact-me__body">
+        <form action="https://5td3tj9fhk.execute-api.us-east-1.amazonaws.com/dev/static-site-mailer" method="POST" class="form-area" id="contact-form">
+          <div class="msg-area">
+            
+            <textarea name="msg" id="msg" placeholder="Write message here..." required=""></textarea>
+          </div>
+          <div class="details-area">
+            
+            <input type="text" name="firstname" id="firstname" placeholder="First Name" required="">
+
+            <input type="text" name="lastname" id="lastname" placeholder="Last Name" required="">
+
+            
+            <input type="email" name="email" id="email" placeholder="Email" required="">
+            
+          </div>
+          <div class="btn-container">
+            <button type="submit" name="submit" class="btn">Submit</button>
+            </div>
+        </form>
+        <p id="ajax-response"></p>
+      </div>
+      
 
     </section>
 
 
     </main>
     <footer class='footer'>
+
+      <p class='footer__address'>700 71st Street Miami Beach, FL 33141</p>
       <p class='footer__text'> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Chase Law LLC </p>
+      <ul class='contact__list'>
+        <li class="contact__item">Call:  <a href='tel:305-397-8595'>305-397-8595</a></li>
+        <li class="contact__item">Fax:  <a href='fax:305-695-0015'>305-695-0015</a> </li>
+        <li class="contact__item">Email:  <a href='mailto: jenna@chaselawflorida.com'>jenna@chaselawflorida.com</a></li>
+        </ul>
       </footer>
     
     <script src="./public/js/app.js"></script>

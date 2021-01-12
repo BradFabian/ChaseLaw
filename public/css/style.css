@@ -37,6 +37,16 @@ h3 {
   font-size: 1.25rem;
 }
 
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ffd369;
+}
+
 section {
   padding: 5em 2em;
 }
@@ -62,14 +72,16 @@ strong {
   display: flex;
 }
 
-.nav__list {
+.nav__list,
+.contact__list {
   text-decoration: none;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nav__list li {
+.nav__list li,
+.contact__list li {
   padding: 1em;
 }
 
@@ -84,10 +96,23 @@ strong {
   color: #eeeeee;
 }
 
+.intro__contact {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .content__list {
   text-decoration: none;
   list-style: none;
   margin: 1em;
+}
+
+.content__item {
+  margin-bottom: 0.5em;
 }
 
 .content__check {
@@ -116,6 +141,169 @@ strong {
 
 .btn:hover {
   transform: scale(1.1);
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.605), rgba(0, 0, 0, 0.605)), url("/public/images/office.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #eeeeee;
+}
+
+.about__content {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 70em;
+}
+.about__content h2 {
+  margin-bottom: 0.3em;
+}
+.about__content p {
+  text-align: left;
+  margin: 0.4em;
+  max-width: 40em;
+  line-height: 1.4;
+  letter-spacing: 1.6;
+}
+
+.attorney {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #393e46;
+  color: #eeeeee;
+}
+
+.attorney__bio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 1em;
+}
+
+.attorney__img {
+  margin-right: 0.6em;
+  object-fit: contain;
+  flex-basis: 30%;
+}
+
+.attorney__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-basis: 60%;
+}
+.attorney__content p {
+  text-align: left;
+  margin: 0.4em;
+  line-height: 1.3;
+  letter-spacing: 1.6;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.605), rgba(0, 0, 0, 0.605)), url("/public/images/miamisora.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #eeeeee;
+}
+
+.form-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #393e46;
+  border-radius: 20px;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  padding: 4em;
+  margin: 1em;
+}
+
+.details-area {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+  margin: 1em;
+}
+
+.btn-container {
+  order: 3;
+  padding: 1em;
+}
+
+.msg-area > textarea {
+  flex: 1;
+  min-width: 12em;
+  padding: 1rem;
+}
+
+input {
+  font-size: 0.9rem;
+  border-radius: 10px;
+  padding: 0.5em 1.5em;
+  text-align: center;
+  border: 0;
+  margin-bottom: 1.2em;
+}
+
+input,
+textarea {
+  background-color: #ffffffe1;
+  width: 80%;
+  transition: all 0.2s;
+  box-shadow: inset 0 0.12em 0.05em #ffd369, inset 0 0.2em 0.25em;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+textarea {
+  font-size: 0.9rem;
+  border-radius: 15px;
+  border: 0;
+}
+
+textarea::placeholder {
+  color: grey;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  opacity: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  color: grey;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  opacity: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .footer__text {

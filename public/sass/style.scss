@@ -15,6 +15,10 @@ $clr-dark: #222831;
 $clr-light-dark: #393e46;
 $clr-accent: #ffd369;
 
+$form-inset: inset 0 0.12em 0.05em #ffd369, inset 0 0.2em 0.25em;
+$bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+  0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+
 * {
   padding: 0;
   margin: 0;
@@ -56,6 +60,16 @@ h3 {
   font-size: $fs-h3;
 }
 
+li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li a:hover {
+  text-decoration: underline;
+  text-decoration-color: $clr-accent;
+}
+
 section {
   padding: 5em 2em;
 }
@@ -79,7 +93,8 @@ strong {
   display: flex;
 }
 // Nav Bar //
-.nav__list {
+.nav__list,
+.contact__list {
   text-decoration: none;
   list-style: none;
   display: flex;
@@ -102,12 +117,23 @@ strong {
   color: $clr-light;
 }
 
+.intro__contact {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .content__list {
   text-decoration: none;
   list-style: none;
   margin: 1em;
 }
-
+.content__item {
+  margin-bottom: 0.5em;
+}
 .content__check {
   padding: 0.5em;
 }
@@ -135,13 +161,172 @@ strong {
   transform: scale(1.1);
 }
 // About //
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.605), rgba(0, 0, 0, 0.605)),
+    url("/public/images/office.jpg");
+  background-size: cover;
+  background-position: center;
+  color: $clr-light;
+}
+
+.about__content {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 70em;
+  h2 {
+    margin-bottom: 0.3em;
+  }
+
+  p {
+    text-align: left;
+    margin: 0.4em;
+    max-width: 40em;
+    line-height: 1.4;
+    letter-spacing: 1.6;
+  }
+}
 
 // Attorney //
+.attorney {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
+  background: $clr-light-dark;
+  color: $clr-light;
+}
+.attorney__bio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 1em;
+}
+
+.attorney__img {
+  margin-right: 0.6em;
+  object-fit: contain;
+  flex-basis: 30%;
+}
+
+.attorney__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  flex-basis: 60%;
+  p {
+    text-align: left;
+    margin: 0.4em;
+    line-height: 1.3;
+    letter-spacing: 1.6;
+  }
+}
 // Contact //
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.605), rgba(0, 0, 0, 0.605)),
+    url("/public/images/miamisora.jpg");
+  background-size: cover;
+  background-position: center;
+  color: $clr-light;
+}
+
+.form-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: $clr-light-dark;
+  border-radius: 20px;
+  box-shadow: $bs;
+  padding: 4em;
+  margin: 1em;
+}
+.details-area {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+  margin: 1em;
+}
+
+.btn-container {
+  order: 3;
+  padding: 1em;
+}
+
+.msg-area > textarea {
+  flex: 1;
+  min-width: 12em;
+  padding: 1rem;
+}
+
+input {
+  font-size: 0.9rem;
+  border-radius: 10px;
+  padding: 0.5em 1.5em;
+  text-align: center;
+  border: 0;
+  margin-bottom: 1.2em;
+}
+
+input,
+textarea {
+  background-color: #ffffffe1;
+  width: 80%;
+  transition: all 0.2s;
+  box-shadow: $form-inset;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #ffffff;
+  width: 100%;
+}
+textarea {
+  font-size: 0.9rem;
+  border-radius: 15px;
+  border: 0;
+}
+
+textarea::placeholder {
+  color: grey;
+  font-family: $ff-primary;
+  font-size: 0.8em;
+  opacity: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  color: grey;
+  font-family: $ff-primary;
+  font-size: 0.8em;
+  opacity: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
 
 // Footer //
-
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 .footer__text {
   text-transform: capitalize;
 }
