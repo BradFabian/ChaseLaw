@@ -86,7 +86,15 @@ strong {
 }
 
 // Header //
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #eeeeee7b !important;
+  transition: all 1s;
+  color: $clr-light !important;
+  transform: scale(0.9);
+}
 .header {
   display: flex;
   justify-content: space-around;
