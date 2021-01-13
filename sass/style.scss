@@ -19,17 +19,18 @@ $form-inset: inset 0 0.12em 0.05em #ffd369, inset 0 0.2em 0.25em;
 $bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
   0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
 }
 *::after,
 *::before {
-  box-sizing: inherit;
-}
-html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 $clr-accent: #ffd369;
@@ -37,6 +38,7 @@ $clr-accent: #ffd369;
 // body //
 body {
   font-family: $ff-primary;
+  font-size: $fs-body;
 }
 
 // typography //
@@ -84,9 +86,7 @@ strong {
 }
 
 // Header //
-.logo {
-  min-width: 60%;
-}
+
 .header {
   display: flex;
   justify-content: space-around;
@@ -113,6 +113,7 @@ strong {
     padding: 1em;
   }
 }
+
 // Intro //
 .intro {
   display: flex;
@@ -279,7 +280,7 @@ strong {
 
 .msg-area > textarea {
   flex: 1;
-  min-width: 12em;
+
   padding: 1rem;
 }
 
@@ -339,4 +340,82 @@ input::placeholder {
 }
 .footer__text {
   text-transform: capitalize;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  body {
+    font-size: 0.8rem;
+  }
+
+  strong {
+    padding: 0.3px;
+  }
+
+  // header //
+  .header__logo {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header__nav {
+    font-size: 0.8rem;
+  }
+
+  // intro  //
+  // about //
+
+  .about__content {
+    p {
+      text-align: center;
+    }
+  }
+
+  // attorney //
+  .attorney__bio {
+    flex-direction: column;
+  }
+  .attorney__img {
+    object-fit: contain;
+    flex-basis: 20%;
+  }
+
+  .attorney__content p {
+    text-align: center;
+  }
+
+  // contact //
+
+  // footer //
+  .footer {
+    padding: 1em;
+    flex-direction: column-reverse;
+    p {
+      padding: 0.3em;
+    }
+  }
+  .contact__list {
+    flex-direction: column;
+    li {
+      padding: 0.3em;
+    }
+  }
 }
