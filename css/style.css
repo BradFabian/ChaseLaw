@@ -62,10 +62,15 @@ strong {
   padding: 0.1em;
 }
 
+.logo {
+  width: 60%;
+}
+
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background: #eeeeee;
 }
 
 .header__nav {
@@ -309,6 +314,7 @@ input::placeholder {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  background: #eeeeee;
 }
 
 .footer__text {

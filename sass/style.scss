@@ -84,10 +84,14 @@ strong {
 }
 
 // Header //
+.logo {
+  min-width: 60%;
+}
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background: $clr-light;
 }
 .header__nav {
   display: flex;
@@ -331,6 +335,7 @@ input::placeholder {
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  background: $clr-light;
 }
 .footer__text {
   text-transform: capitalize;
