@@ -69,8 +69,8 @@ strong {
   width: 100%;
   background: #eeeeee7b !important;
   transition: all 1s;
-  color: #eeeeee !important;
-  transform: scale(0.9);
+  transform: scale(0.96);
+  text-shadow: 1px 1px #eeeeee;
 }
 
 .header {
