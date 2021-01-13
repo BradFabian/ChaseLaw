@@ -93,7 +93,7 @@ strong {
   background: #eeeeee7b !important;
   transition: all 1s;
   transform: scale(0.96);
-  text-shadow: 1px 1px $clr-light;
+  text-shadow: 1px 1px $clr-light !important;
 }
 .header {
   display: flex;
