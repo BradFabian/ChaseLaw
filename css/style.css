@@ -355,6 +355,7 @@ input::placeholder {
 
   .about__content p {
     text-align: center;
+    line-height: 1.8;
   }
 
   .attorney__bio {
@@ -368,6 +369,7 @@ input::placeholder {
 
   .attorney__content p {
     text-align: center;
+    line-height: 1.8;
   }
 
   .footer {
