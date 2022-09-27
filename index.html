@@ -86,7 +86,8 @@
     <section class="contact" id='contact'>
       <h2><strong>Contact Us</strong></h2>
       <div class="contact-me__body">
-        <form action="" method="POST" class="form-area" id="contact-form">
+        <form action="https://r1ljksigcd.execute-api.us-east-1.amazonaws.com/dev/static-site-mailer" method="POST" class="form-area" id="contact-form">
+          <div class="contact_layout">
           <div class="msg-area">
             
             <textarea name="msg" id="msg" placeholder="Write message here..." required=""></textarea>
@@ -101,6 +102,7 @@
             <input type="email" name="email" id="email" placeholder="Email" required="">
             
           </div>
+          </div>
           <div class="btn-container">
             <button type="submit" name="submit" class="btn">Submit</button>
             </div>
@@ -114,7 +116,7 @@
 
     </main>
     <footer class='footer'>
-      <p class='footer__text'> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Chase Law LLC </p>
+      <p class='footer__text'> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Chase Law P.A.</p>
       <p class='footer__address'>700 71st Street Miami Beach, FL 33141</p>
       
       <ul class='contact__list'>
@@ -125,5 +127,6 @@
       </footer>
     
     <script src="./js/app.js"></script>
+    
   </body>
 </html>

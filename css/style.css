@@ -239,6 +239,13 @@ strong {
   color: #eeeeee;
 }
 
+.contact_layout {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .form-area {
   display: flex;
   flex-direction: column;
@@ -256,7 +263,7 @@ strong {
   display: flex;
   flex-direction: column;
   order: 1;
-  margin: 1em;
+  margin: 0 1em;
 }
 
 .btn-container {
@@ -286,7 +293,10 @@ textarea {
   box-shadow: inset 0 0.12em 0.05em #ffd369, inset 0 0.2em 0.25em;
 }
 
-input:focus,
+input:focus {
+  background-color: #ffffff;
+}
+
 textarea:focus {
   background-color: #ffffff;
   width: 100%;
@@ -381,6 +391,14 @@ input::placeholder {
   .attorney__content p {
     text-align: center;
     line-height: 1.8;
+  }
+
+  .contact_layout {
+    flex-direction: column;
+  }
+
+  .msg-area {
+    margin: 1em;
   }
 
   .footer {
